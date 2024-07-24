@@ -24,8 +24,8 @@ const BodyPart = ({ selectedArea }) => {
 
   const [areaData, setAreaData] = useState(null);
   const [specificDish, setSpecificDish] = useState(null);
-  const [error, setError] = useState(null);
-  const [newerror, setNewError] = useState(null);
+  // const [error, setError] = useState(null);
+  // const [newerror, setNewError] = useState(null);
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   const openModal = (id) => {
@@ -43,7 +43,7 @@ const BodyPart = ({ selectedArea }) => {
       axios
         .get(`https://www.themealdb.com/api/json/v1/1/filter.php?a=${selectedArea}`)
         .then((response) => setAreaData(response.data))
-        .catch((error) => setError(error));
+        .catch((error) => "");
     };
     getAreaDetails();
   }, [selectedArea]);
@@ -52,7 +52,7 @@ const BodyPart = ({ selectedArea }) => {
     axios
       .get(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${id}`)
       .then((response) => setSpecificDish(response.data.meals[0]))
-      .catch((error) => setNewError(error));
+      .catch((error) => "");
   };
 
   return (
