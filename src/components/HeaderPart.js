@@ -31,7 +31,7 @@ const header = () => {
           </linearGradient>
         </defs>
       </svg> */}
-      <img src= {logo}/>
+      <img alt="" src= {logo}/>
       <div className="flex items-center gap-x-7">
         <div className="md:flex hidden items-center gap-x-7">
           <div className="flex items-center gap-x-2 hover:text-orange-500 text-lg font-medium">

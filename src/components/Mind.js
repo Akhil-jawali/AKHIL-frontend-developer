@@ -47,7 +47,7 @@ const Mind = () => {
         <div className="py-5 flex items-center justify-between md:gap-x-10 gap-x-5 w-full md:overflow-x-hidden overflow-x-scroll scrollBar">
           {foodList.map((element, index) => (
             <div className="flex flex-col items-center gap-3 " role="button" key={index}>
-              <img src={element.dish}  className="mindImg"/>
+              <img alt="" src={element.dish}  className="mindImg"/>
               <p className="text-xl font-medium capitalize">{element.name}</p>
             </div>
           ))}

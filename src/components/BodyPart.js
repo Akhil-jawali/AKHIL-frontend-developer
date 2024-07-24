@@ -25,6 +25,7 @@ const BodyPart = ({ selectedArea }) => {
   const [areaData, setAreaData] = useState(null);
   const [specificDish, setSpecificDish] = useState(null);
   const [error, setError] = useState(null);
+  const [newerror, setNewError] = useState(null);
   const [modalIsOpen, setModalIsOpen] = useState(false);
 
   const openModal = (id) => {
@@ -51,7 +52,7 @@ const BodyPart = ({ selectedArea }) => {
     axios
       .get(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${id}`)
       .then((response) => setSpecificDish(response.data.meals[0]))
-      .catch((error) => setError(error));
+      .catch((error) => setNewError(error));
   };
 
   return (
@@ -121,7 +122,7 @@ const BodyPart = ({ selectedArea }) => {
       <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 items-center gap-5">
         {areaData && areaData.meals ? (
           areaData.meals.map((meal) => (
-            <a
+            <button
               key={meal.idMeal}
               className="flex flex-col md:px-5 hover:px-7"
               onClick={() => openModal(meal.idMeal)}
@@ -149,7 +150,7 @@ const BodyPart = ({ selectedArea }) => {
                   This is just a dummy data it has nothing to do with the above food item
                 </p>
               </div>
-            </a>
+            </button>
           ))
         ) : (
           <p>Loading...</p>
