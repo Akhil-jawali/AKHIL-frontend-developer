@@ -11,24 +11,24 @@ const FooterPart = () => {
                 </div>
                 <div className='flex flex-col md:col-span-3 col-span-4 items-center gap-2'>
                     <p className='md:text-xl text-base text-white font-medium'>Title-1</p>
-                    <button role='button' className='md:text-lg text-sm text-gray-500 hover:text-white font-normal'>Home</button>
-                    <button role='button' className='md:text-lg text-sm text-gray-500 hover:text-white font-normal'>Home</button>
-                    <button role='button' className='md:text-lg text-sm text-gray-500 hover:text-white font-normal'>Home</button>
-                    <button role='button' className='md:text-lg text-sm text-gray-500 hover:text-white font-normal'>Home</button>
+                    <button className='md:text-lg text-sm text-gray-500 hover:text-white font-normal'>Home</button>
+                    <button className='md:text-lg text-sm text-gray-500 hover:text-white font-normal'>Home</button>
+                    <button className='md:text-lg text-sm text-gray-500 hover:text-white font-normal'>Home</button>
+                    <button className='md:text-lg text-sm text-gray-500 hover:text-white font-normal'>Home</button>
                 </div>
                 <div className='flex flex-col md:col-span-3 col-span-4 items-center gap-2'>
                     <p className='md:text-xl text-base text-white font-medium'>Title-1</p>
-                    <button role='button' className='md:text-lg text-sm text-gray-500 hover:text-white font-normal'>Home</button>
-                    <button role='button' className='md:text-lg text-sm text-gray-500 hover:text-white font-normal'>Home</button>
-                    <button role='button' className='md:text-lg text-sm text-gray-500 hover:text-white font-normal'>Home</button>
-                    <button role='button' className='md:text-lg text-sm text-gray-500 hover:text-white font-normal'>Home</button>
+                    <button className='md:text-lg text-sm text-gray-500 hover:text-white font-normal'>Home</button>
+                    <button className='md:text-lg text-sm text-gray-500 hover:text-white font-normal'>Home</button>
+                    <button className='md:text-lg text-sm text-gray-500 hover:text-white font-normal'>Home</button>
+                    <button className='md:text-lg text-sm text-gray-500 hover:text-white font-normal'>Home</button>
                 </div>
                 <div className='flex flex-col md:col-span-3 col-span-4 items-center gap-2'>
                     <p className='md:text-xl text-base text-white font-medium'>Title-1</p>
-                    <button role='button' className='md:text-lg text-sm text-gray-500 hover:text-white font-normal'>Home</button>
-                    <button role='button' className='md:text-lg text-sm text-gray-500 hover:text-white font-normal'>Home</button>
-                    <button role='button' className='md:text-lg text-sm text-gray-500 hover:text-white font-normal'>Home</button>
-                    <button role='button' className='md:text-lg text-sm text-gray-500 hover:text-white font-normal'>Home</button>
+                    <button className='md:text-lg text-sm text-gray-500 hover:text-white font-normal'>Home</button>
+                    <button className='md:text-lg text-sm text-gray-500 hover:text-white font-normal'>Home</button>
+                    <button className='md:text-lg text-sm text-gray-500 hover:text-white font-normal'>Home</button>
+                    <button className='md:text-lg text-sm text-gray-500 hover:text-white font-normal'>Home</button>
                 </div>
             </div>
         </div>
